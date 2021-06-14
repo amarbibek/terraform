@@ -45,3 +45,10 @@ output "bibek_iam_user_complete_details" {
 # get console
 # terraform console(enter)
 # aws_iam_user.bibek_iam_user(enter)
+
+# updating IAM user
+resource "aws_iam_user" "bibek_iam_user" {
+  name = "bibek-iam-user-new"
+}
+# this is to check output
+# terraform apply -target=aws_iam_user.bibek_iam_user
